@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #03588C;">
         <div class="container-fluid">
             <a class="navbar-brand text-center" href="index.html">
-                <img src="img/Logo-de-PE.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                <img src="img/Logo-de-PE.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top">
                 Bootstrap
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,51 +37,46 @@
     </nav>
     <nav class="container mt-4 col-md-3" aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Perfil</li>
         </ol>
     </nav>
-    <div class="container">
-        <div class="jumbotron col-md-12 col-sm-12">
-            <h1 class="display-4">Projeto de Práticas de Empreendedorismo</h1>
-            <p class="lead">Este é um site feito para o projeto da materia de PE, dos alunos do 1ºDS da ETEC Martinho Di Ciero, Itu/SP</p>
-            <hr class="my-4">
-            <p>Tambem será utilizado para uma tarefa de Programação WEB</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
-        </div>
-    </div>
-    <div class="container mt-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Um pouco sobre nós</h5>
-          <p class="card-text">Nossa empresa fictícia para o trabalho de Práticas de Empreendedorismo será 
-            uma ONG com o intuito de elevar o nível de conhecimento e profissionalismo na área 
-            dos esportes, alcançar o nível técnico perdido com o passar do tempo, abrir portas 
-            para aqueles com potencial e para os que não tem muitas condições de ir além.
-          </p>
-          <p>
-            O governo brasileiro investiu cerca de 2 bilhões de reais em esportes em 2021. 
-            Com as Olimpíadas e Paraolimpíadas de Tóquio, o Brasil bateu recorde de medalhas 
-            e viveu fortes emoções com atletas excepcionais. Este ano também reservou 
-            emoções para os estudantes. Após 17 anos, a maior competição escolar do país 
-            voltou a acontecer. Os Jogos Escolares Brasileiros (JEB’s) levaram cerca de seis mil 
-            alunos, de 12 a 14 anos, para competições no Parque Olímpico do Rio de Janeiro, no 
-            mês de novembro.
-          </p>
-          <p>Governo Federal investiu no esporte brasileiro com ações, programas e obras 
-            de infraestrutura e foi a base para um 2021 com recordes e muitos pódios. Este ano, 
-            foram mais de 1.083 infraestruturas consolidadas e entregues e cerca de R$ 2 bilhões 
-            em repasses do Governo Federal para investimentos no esporte. Além disso, foram 
-            mais de 2.500 projetos novos apresentados para a Lei de Incentivo ao Esporte (LIE), 
-            um número recorde.
-          </p>
-            Mesmo assim, quando comparamos o nosso país com os outros países da 
-            América Latina, podemos percebem uma grande diferença nos investimentos na área 
-            esportiva, mesmo países com economias muito piores que a nossa possuem maiores 
-            taxas de investimento.
-          </p>
-        </div>
+    <div class="container mt-4 mb-4 col-md-6 col-sm-12">
+    <form method="get">
+      <div class="form-group">
+        <label for="exampleInput">Nome completo</label>
+        <input type="text" class="form-control" id="nameuser" placeholder="Seu nome">
       </div>
+      <div class="form-group">
+        <label for="exampleInput">CPF</label>
+        <input type="text" class="form-control" id="CPFuser" placeholder="Seu CPF" maxlength="15">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Endereço de email</label>
+        <input type="email" class="form-control" id="inputemail" name="inputemail" aria-describedby="emailHelp" placeholder="Seu email">
+        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        <input type="password" class="form-control" id="Password" name="Password" placeholder="Senha">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="vepass">
+        <label class="form-check-label" for="exampleCheck1">Ver senha</label>
+      </div>
+      <div class="form-group form-check" style="padding: 0%;">
+        <label class="form-check-label" for="exampleCheck1">Selecionar função</label>
+        <select class="form-control" name="funcao" id="funcao">
+          <option selected disabled>Selecionar</option>
+          <option>Doador</option>
+          <option>Voluntário</option>
+          <option>Funcionario</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
     </div>
+    <footer></footer>
     
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
